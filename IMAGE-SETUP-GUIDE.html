@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Placeholder Guide - Almarai AI Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #006633;
+            border-bottom: 3px solid #006633;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #004d26;
+            margin-top: 30px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .file-list {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #006633;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+        }
+        .note {
+            background: #fff9e6;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background: #ffe6e6;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .image-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .spec-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .spec-card h3 {
+            color: #006633;
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>📸 Image Placeholder Guide - Almarai AI Demo</h1>
+    
+    <div class="important">
+        <strong>⚠️ IMPORTANT:</strong> All images referenced in the HTML currently point to placeholder paths. You need to add your own images to make the site fully functional.
+    </div>
+
+    <div class="section">
+        <h2>📁 Required Directory Structure</h2>
+        <p>Create the following folders and add your images:</p>
+        <div class="file-list">
+assets/<br>
+└── images/<br>
+    ├── almarai-logo.svg (✅ Already created)<br>
+    ├── hero-milk.jpg<br>
+    ├── hero-juice.jpg<br>
+    ├── hero-cheese.jpg<br>
+    ├── products/<br>
+    │   ├── milk-fresh.jpg<br>
+    │   ├── milk-low-fat.jpg<br>
+    │   ├── juice-orange.jpg<br>
+    │   ├── juice-mango.jpg<br>
+    │   ├── juice-mixed.jpg<br>
+    │   ├── cheese-cheddar.jpg<br>
+    │   ├── cheese-cream.jpg<br>
+    │   ├── yogurt-plain.jpg<br>
+    │   └── yogurt-fruit.jpg<br>
+    └── gallery/<br>
+        ├── scene-1.jpg<br>
+        ├── scene-2.jpg<br>
+        ├── scene-3.jpg<br>
+        └── scene-4.jpg
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎨 Image Specifications</h2>
+        
+        <h3>Hero Section Images</h3>
+        <div class="image-specs">
+            <div class="spec-card">
+                <h3>hero-milk.jpg</h3>
+                <p><strong>Dimensions:</strong> 1920x1080px (16:9)</p>
+                <p><strong>Content:</strong> Almarai fresh milk products with clean background</p>
+                <p><strong>Style:</strong> Professional, bright, appetizing</p>
+            </div>
+            <div class="spec-card">
+                <h3>hero-juice.jpg</h3>
+                <p><strong>Dimensions:</strong> 1920x1080px (16:9)</p>
+                <p><strong>Content:</strong> Almarai juice bottles/cartons with fresh fruits</p>
+                <p><strong>Style:</strong> Vibrant, colorful, natural</p>
+            </div>
+            <div class="spec-card">
+                <h3>hero-cheese.jpg</h3>
+                <p><strong>Dimensions:</strong> 1920x1080px (16:9)</p>
+                <p><strong>Content:</strong> Almarai cheese products display</p>
+                <p><strong>Style:</strong> Premium, appetizing, well-lit</p>
+            </div>
+        </div>
+
+        <h3>Product Card Images</h3>
+        <div class="image-specs">
+            <div class="spec-card">
+                <h3>Product Images</h3>
+                <p><strong>Dimensions:</strong> 800x800px (1:1 square)</p>
+                <p><strong>Format:</strong> JPG or PNG</p>
+                <p><strong>File size:</strong> Keep under 200KB for optimal loading</p>
+                <p><strong>Background:</strong> White or clean background</p>
+                <p><strong>Content:</strong> Single product clearly visible</p>
+            </div>
+        </div>
+
+        <h3>Gallery Scene Images</h3>
+        <div class="image-specs">
+            <div class="spec-card">
+                <h3>Gallery Images</h3>
+                <p><strong>Dimensions:</strong> 1000x1000px (1:1 square)</p>
+                <p><strong>Format:</strong> JPG</p>
+                <p><strong>Content:</strong> Lifestyle scenes featuring Almarai products</p>
+                <p><strong>Style:</strong> Professional food photography, natural lighting</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🤖 How to Get AI-Generated Images</h2>
+        
+        <h3>Option 1: Use AI Image Generators</h3>
+        <p>Generate images using these prompts with tools like DALL-E, Midjourney, or Stable Diffusion:</p>
+        
+        <div class="note">
+            <strong>Example Prompts:</strong><br><br>
+            <strong>For Milk Products:</strong><br>
+            "Professional product photography of fresh milk bottle, white background, studio lighting, high quality, Almarai brand style, dairy product, 4K resolution"<br><br>
+            
+            <strong>For Juice Products:</strong><br>
+            "Professional product photography of orange juice carton, fresh oranges nearby, clean white background, bright natural lighting, premium quality, food photography"<br><br>
+            
+            <strong>For Hero Images:</strong><br>
+            "Hero banner image for dairy brand website, fresh milk products display, bright kitchen setting, professional food photography, wide angle, 16:9 aspect ratio"<br><br>
+            
+            <strong>For Gallery Scenes:</strong><br>
+            "Lifestyle product photography, breakfast table with dairy products, natural morning light, professional composition, warm atmosphere, square format"
+        </div>
+
+        <h3>Option 2: Use Stock Photo Websites</h3>
+        <p>Download free or paid images from:</p>
+        <ul>
+            <li><strong>Unsplash</strong> (unsplash.com) - Free high-quality images</li>
+            <li><strong>Pexels</strong> (pexels.com) - Free stock photos</li>
+            <li><strong>Pixabay</strong> (pixabay.com) - Free images and videos</li>
+            <li><strong>Freepik</strong> (freepik.com) - Free and premium resources</li>
+        </ul>
+
+        <h3>Option 3: Use Placeholder Services (Temporary)</h3>
+        <p>For testing purposes, you can use placeholder image services:</p>
+        <ul>
+            <li><strong>placeholder.com:</strong> https://via.placeholder.com/800x800/006633/FFFFFF?text=Product</li>
+            <li><strong>picsum.photos:</strong> https://picsum.photos/800/800</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🔧 Quick Setup Instructions</h2>
+        <ol>
+            <li><strong>Create the folders:</strong>
+                <ul>
+                    <li>assets/images/products/</li>
+                    <li>assets/images/gallery/</li>
+                </ul>
+            </li>
+            <li><strong>Add your images</strong> with the exact filenames listed above</li>
+            <li><strong>Optimize images:</strong>
+                <ul>
+                    <li>Compress images using tools like TinyPNG or ImageOptim</li>
+                    <li>Keep file sizes under 200KB for products, 500KB for hero images</li>
+                    <li>Use JPG format for photos, PNG for graphics with transparency</li>
+                </ul>
+            </li>
+            <li><strong>Test the website</strong> by opening index.html in a browser</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Branding Guidelines for Images</h2>
+        <div class="note">
+            <strong>Important Branding Notes:</strong>
+            <ul>
+                <li>Use Almarai's brand colors: Green (#006633) and white</li>
+                <li>Maintain clean, professional aesthetic</li>
+                <li>Ensure products are clearly visible and well-lit</li>
+                <li>Use high-resolution images (minimum 72 DPI for web)</li>
+                <li>Keep backgrounds clean and uncluttered</li>
+                <li>Maintain consistency in photography style across all images</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>✅ Testing Checklist</h2>
+        <ul>
+            <li>☐ All images load correctly on desktop</li>
+            <li>☐ All images load correctly on mobile</li>
+            <li>☐ Hero slider transitions smoothly between images</li>
+            <li>☐ Product cards display images properly</li>
+            <li>☐ Gallery images show hover effects</li>
+            <li>☐ Page loads quickly (under 3 seconds)</li>
+            <li>☐ No broken image links</li>
+        </ul>
+    </div>
+
+    <div class="important">
+        <strong>🎨 Need Help with the Almarai Logo?</strong><br>
+        The current SVG logo is a placeholder. For the official Almarai logo:
+        <ol>
+            <li>Visit the official Almarai website (almarai.com)</li>
+            <li>Download their official logo from their brand assets or press kit</li>
+            <li>Replace assets/images/almarai-logo.svg with the official file</li>
+            <li>Ensure you have permission to use the logo for demo purposes</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Deployment Ready</h2>
+        <p>Once all images are in place, your site is ready to deploy to Netlify:</p>
+        <ol>
+            <li>Create a GitHub repository with all your files</li>
+            <li>Connect the repository to Netlify</li>
+            <li>Deploy with one click!</li>
+            <li>Netlify will handle all the hosting automatically</li>
+        </ol>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #006633; color: #666;">
+        <p><strong>Almarai AI Demo Website</strong> - Image Placeholder Guide</p>
+        <p style="font-size: 0.9em;">Replace all placeholder images with your own high-quality photos to complete the website.</p>
+    </footer>
+</body>
+</html>

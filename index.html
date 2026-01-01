@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Almarai - Fresh Dairy Products and Food - Demo Showcase">
+    <title>Almarai - Fresh Products | Quality You Can Trust</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/almarai-logo.svg" alt="Almarai Logo" class="logo-img">
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#brands" class="nav-link">Brands</a></li>
+                        <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <!-- <div class="hero-background">
+                    <img src="assets/images/hero-milk.jpg" alt="Almarai Fresh Milk" class="hero-bg-img">
+                </div> -->
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">Premium Quality</div>
+                        <h1 class="hero-title">Fresh Milk<br><span>Pure & Natural</span></h1>
+                        <p class="hero-subtitle">Discover Almarai's premium dairy range - fresh, nutritious, and delicious</p>
+                        <div class="hero-buttons">
+                            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+                            <a href="#about" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-background">
+                    <img src="assets/images/hero-juice.jpg" alt="Almarai Fresh Juice" class="hero-bg-img">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">100% Natural</div>
+                        <h1 class="hero-title">100% Natural Juices<br><span>Fresh & Healthy</span></h1>
+                        <p class="hero-subtitle">Experience the fusion of nature and quality in every sip</p>
+                        <div class="hero-buttons">
+                            <a href="#gallery" class="btn btn-primary">Explore Products</a>
+                            <a href="#about" class="btn btn-secondary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-background">
+                    <img src="assets/images/hero-cheese.jpg" alt="Almarai Cheese Products" class="hero-bg-img">
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">Premium Selection</div>
+                        <h1 class="hero-title">Artisan Cheese<br><span>Expertly Crafted</span></h1>
+                        <p class="hero-subtitle">Where tradition meets culinary excellence</p>
+                        <div class="hero-buttons">
+                            <a href="#recipes" class="btn btn-primary">View Recipes</a>
+                            <a href="#products" class="btn btn-secondary">Our Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="hero-controls">
+            <button class="hero-control hero-prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="hero-control hero-next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Slider Indicators -->
+        <div class="hero-indicators">
+            <button class="hero-indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="hero-indicator" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="hero-indicator" data-slide="2" aria-label="Go to slide 3"></button>
+        </div>
+    </section>
+
+    <!-- About Section
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="section-header">
+                    <h2 class="section-title">Almarai Products</h2>
+                    <p class="section-subtitle">Products with a Quality You Can Trust</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#006633" opacity="0.1"/>
+                                <path d="M24 14L28 22H20L24 14Z" fill="#006633"/>
+                                <circle cx="24" cy="28" r="4" fill="#006633"/>
+                                <path d="M14 34L18 28H30L34 34H14Z" fill="#006633"/>
+                            </svg>
+                        </div>
+                        <h3>Advanced AI Technology</h3>
+                        <p>Utilizing cutting-edge artificial intelligence to generate realistic product imagery</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#006633" opacity="0.1"/>
+                                <path d="M24 12L26 20H32L27 24L29 32L24 28L19 32L21 24L16 20H22L24 12Z" fill="#006633"/>
+                            </svg>
+                        </div>
+                        <h3>Brand Authentic</h3>
+                        <p>Maintaining Almarai's trusted brand identity in every generated visual</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#006633" opacity="0.1"/>
+                                <rect x="16" y="16" width="16" height="16" rx="2" fill="#006633"/>
+                                <path d="M20 24L22 26L28 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>Delivering high-quality visuals that reflect Almarai's excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Products Gallery Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Almarai Products</h2>
+                <p class="section-subtitle">Products with a Quality You Can Trust</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-category="milk">Dairy</button>
+                <button class="filter-tab" data-category="juice">Baked Goods</button>
+                <button class="filter-tab" data-category="cheese">Foods</button>
+                <button class="filter-tab" data-category="yogurt">Juices</button>
+                <button class="filter-tab" data-category="meat">Poultry</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-category="milk">
+                    <div class="product-image">
+                        <img src="assets/images/products/milk-fresh.jpg" alt="Almarai Fresh Milk" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Full Cream Milk</h3>
+                        <p class="product-description">Premium quality dairy products</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" data-category="milk">
+                    <div class="product-image">
+                        <img src="assets/images/products/milk-low-fat.jpg" alt="Almarai Low Fat Milk" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Low Fat Fresh Milk</h3>
+                        <p class="product-description">Healthy choice for your family</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 - Baked Goods 1 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (10).png" alt="Almarai Baked Goods" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Bakery Selection</h3>
+                        <p class="product-description">Freshly baked every day</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 - Baked Goods 2 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (12).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Bread Varieties</h3>
+                        <p class="product-description">Quality ingredients, delicious taste</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 - Baked Goods 3 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (13).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Artisan Croissants</h3>
+                        <p class="product-description">Light and flaky perfection</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 - Baked Goods 4 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (14).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Danish Pastries</h3>
+                        <p class="product-description">Sweet and buttery delights</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 - Baked Goods 5 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (15).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Gourmet Baguettes</h3>
+                        <p class="product-description">Crusty and authentic</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 - Baked Goods 6 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (16).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Specialty Breads</h3>
+                        <p class="product-description">Unique and delicious</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 9 - Baked Goods 7 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (17).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Rolls</h3>
+                        <p class="product-description">Soft and fluffy</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 10 - Baked Goods 8 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (18).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Artisan Pastries</h3>
+                        <p class="product-description">Handcrafted perfection</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 11 - Baked Goods 9 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (19).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Baked Selection</h3>
+                        <p class="product-description">Quality baked goods</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 12 - Baked Goods 10 -->
+                <div class="product-card" data-category="juice">
+                    <div class="product-image">
+                        <img src="assets/Baked goods/image (9).png" alt="Almarai Bakery" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Baked Favorites</h3>
+                        <p class="product-description">Daily fresh bakery items</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 13 - Foods 1 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (28).png" alt="Almarai Food Products" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Food Selection</h3>
+                        <p class="product-description">Quality food products</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 14 - Foods 2 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (29).png" alt="Almarai Food Products" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Food Variety</h3>
+                        <p class="product-description">Nutritious and delicious</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 15 - Foods 3 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (30).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cheese Variety Pack</h3>
+                        <p class="product-description">Multiple flavors to enjoy</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 16 - Foods 4 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (31).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Food Selection</h3>
+                        <p class="product-description">Top quality ingredients</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 17 - Foods 5 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (32).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Gourmet Food Items</h3>
+                        <p class="product-description">Exceptional taste and quality</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 18 - Foods 6 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (33).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Specialty Foods</h3>
+                        <p class="product-description">Unique flavors</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 19 - Foods 7 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (34).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Food Options</h3>
+                        <p class="product-description">Healthy and tasty</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 20 - Foods 8 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (35).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Food Range</h3>
+                        <p class="product-description">Quality you can trust</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 21 - Foods 9 -->
+                <div class="product-card" data-category="cheese">
+                    <div class="product-image">
+                        <img src="assets/Foods/Foods/image (36).png" alt="Almarai Food" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Delicious Food Selection</h3>
+                        <p class="product-description">Perfect for every meal</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 22 - Juices 1 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (20).png" alt="Almarai Fresh Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Orange Juice</h3>
+                        <p class="product-description">100% natural fruit juice</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 23 - Juices 2 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (21).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mixed Fruit Juice</h3>
+                        <p class="product-description">Refreshing and healthy</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 24 - Juices 3 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (23).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mango Nectar</h3>
+                        <p class="product-description">Tropical refreshment</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 25 - Juices 4 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (24).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Apple Juice</h3>
+                        <p class="product-description">Crisp and refreshing</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 26 - Juices 5 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (25).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Grape Juice</h3>
+                        <p class="product-description">Sweet and natural</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 27 - Juices 6 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (26).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pineapple Juice</h3>
+                        <p class="product-description">Tropical delight</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 28 - Juices 7 -->
+                <div class="product-card" data-category="yogurt">
+                    <div class="product-image">
+                        <img src="assets/Juices/Juices/image (27).png" alt="Almarai Juice" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Berry Blend Juice</h3>
+                        <p class="product-description">Rich in antioxidants</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 29 - Meat 1 -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="assets/Almarai images/image (2).png" alt="Almarai Fresh Meat" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Fresh Meat</h3>
+                        <p class="product-description">Fresh and quality assured</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 11 - Meat -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="assets/Almarai images/image (3).png" alt="Almarai Chicken Products" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Chicken Selection</h3>
+                        <p class="product-description">Premium poultry products</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 12 - Meat -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="assets/Almarai images/image (4).png" alt="Almarai Beef Products" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Quality Beef Cuts</h3>
+                        <p class="product-description">Tender and flavorful</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 13 - Meat -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="assets/Almarai images/image (5).png" alt="Almarai Lamb Products" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Lamb Selection</h3>
+                        <p class="product-description">Finest quality lamb</p>
+                    </div>
+                </div>
+
+                <!-- Product Card 14 - Meat -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="assets/Almarai images/image (6).png" alt="Almarai Meat Variety" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fresh Meat Variety Pack</h3>
+                        <p class="product-description">Complete selection for your needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="gallery" id="recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recipes</h2>
+                <p class="section-subtitle">Mouthwatering meals for the whole family to enjoy!</p>
+            </div>
+
+            <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 1200px; margin: 0 auto;">
+                <div class="gallery-item">
+                    <img src="assets/recipes/image (13).png" alt="Almarai Recipe 1" loading="lazy">
+                    <div class="gallery-info">
+                        <h3>Delicious Recipe</h3>
+                        <p>Easy to make • Perfect for family meals</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/recipes/image (28).png" alt="Almarai Recipe 2" loading="lazy">
+                    <div class="gallery-info">
+                        <h3>Tasty Creation</h3>
+                        <p>Quick preparation • Mouthwatering results</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/recipes/image (31).png" alt="Almarai Recipe 3" loading="lazy">
+                    <div class="gallery-info">
+                        <h3>Family Favorite</h3>
+                        <p>Simple ingredients • Amazing taste</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Almarai Cares Section -->
+    <section class="about" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Almarai Cares</h2>
+                <p class="section-subtitle">Supporting Communities, Promoting Health</p>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center; padding: 20px;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #666;">Almarai not only provides fresh and healthy products to its consumers, but also works with them hand in hand to support local communities in order to achieve a real positive impact through its corporate social responsibility program, which is based on: <strong style="color: #006633;">(Training and Development - Promoting Healthy Living - Community Care)</strong>. Almarai cares about you all.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="about" id="brands" style="background-color: #fafafa; padding: 60px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Brands</h2>
+                <p class="section-subtitle">Brands with a Quality You Can Trust</p>
+            </div>
+            
+            <!-- First Row of Brands -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; max-width: 1000px; margin: 0 auto 40px;">
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/logo_Lusine8102022101322AM.avif" alt="Lusine" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/logo_7DAYS8102022104630AM.avif" alt="7 Days" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/logo_ALYOUM8102022104946AM.avif" alt="Alyoum" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/Logo_144_Nuralac_Plus920202260320AM.avif" alt="Nuralac Plus" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+            </div>
+            
+            <!-- Second Row of Brands -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; max-width: 1000px; margin: 0 auto;">
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/evolac-new-logo22202490707AM.avif" alt="Evolac" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/final-suregrow-logo322202471726AM.avif" alt="Sure Grow" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/final-surenutri-logo325202492727AM.avif" alt="Sure Nutri" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                    <img src="assets/ourbrands-logos/Ice_Leaf_Logo_Image_153x141_Pixel11202025105308AM.avif" alt="Ice Leaf" style="max-width: 100%; max-height: 80px; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4M</div>
+                    <div class="stat-label">Liters of Milk Daily</div>
+                    <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.9;">40 liters per cow - double the European average</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Delivery Vehicles</div>
+                    <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.9;">Largest fleet in the Middle East</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">39K</div>
+                    <div class="stat-label">Quality Tests Daily</div>
+                    <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.9;">Ensuring quality you can trust</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">220K+</div>
+                    <div class="stat-label">Points of Sale</div>
+                    <p style="font-size: 0.85rem; margin-top: 10px; opacity: 0.9;">Across 7 countries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/almarai-logo.svg" alt="Almarai Logo" class="footer-logo">
+                    <p class="footer-text">Trusted quality for generations</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#brands">Brands</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="https://www.almarai.com/en/faqs" target="_blank">FAQs</a></li>
+                        <li><a href="https://www.almarai.com/en/sitemap" target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title" id="contact">Quick Connect</h4>
+                    <ul class="footer-links">
+                        <li>P.O. Box 8524, Riyadh 11492</li>
+                        <li>Phone: +966 (11) 470 0005</li>
+                        <li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=966554700101" target="_blank" style="color: #4CAF50;">+966554700101</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/almarai/" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/almarai" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/almarai/" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/almarai/" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                    <a href="https://www.almarai.com/en/privacy-policy" target="_blank" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Privacy Policy</a>
+                    <a href="https://www.almarai.com/en/terms-and-conditions" target="_blank" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Terms and Conditions</a>
+                    <a href="https://www.almarai.com/en/contact-us" target="_blank" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Contact Us</a>
+                    <a href="https://www.almarai.com/en/contact-us/locations" target="_blank" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Our Locations</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <p><strong>Demo Disclaimer:</strong> This is a demonstration website for Almarai products. Almarai®, its logo, and all associated trademarks are the property of Almarai Company. This demo is not affiliated with or endorsed by Almarai Company.</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Almarai. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
